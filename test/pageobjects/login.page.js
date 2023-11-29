@@ -18,6 +18,9 @@ class LoginPage extends Page {
     get shoppingCart () {
         return $('.shopping_cart_link');
     }
+    get errorButton () {
+        return $('[class="error-button"]');
+    }
 
     async login (username, password) {
         await this.inputUsername.setValue(username);
